@@ -10,9 +10,9 @@ def home():
     return render_template("base.html")
 
 
-@app.route("/user")
-def user():
-    return "Go away, smelly-face!"
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
 if __name__ == "__main__":
