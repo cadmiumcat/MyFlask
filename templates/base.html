@@ -2,6 +2,12 @@
 
 {% block title%} This is a title {% endblock %}
 
+{% block head %}
+{{ super() }}
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+{% endblock head %}
+
+
 {% block navbar %}
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
