@@ -1,3 +1,16 @@
 {% extends "bootstrap/base.html" %}
 
 {% block title%} This is a title {% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">baaaaahhh</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('home') }}">Home</a> </li>
+            <li><a href="{{ url_for('about') }}">Tell me what to do</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
